@@ -156,7 +156,8 @@
 	## Vector sources
 
 	- **Web Feature Service**/ArcGis Feature Service
-	- **GeoJson/Shapefile/KML/CZML/GPX/GeoRSS**
+	- **GeoJson**/Shapefile/**KML/CZML/GPX/GeoRSS**
+	- **Mapbox Vector Tiles**
 					
 					</textarea>
 				</section>
@@ -210,10 +211,10 @@ Software Engineer - with focus on
 
 - 2D data visualisation
     - vector
-    - raster
+    - raster (GeoTIFF support is coming)
     - tabular/sensor/point based
 - API/portal connections
-    - OGC - WMS, WFS, WPS, WCS, CSW, SOS
+    - OGC - WMS, WFS, WPS, CSW, SOS
     - THREDDS
     - Socrata
     - OpenDataSoft
@@ -263,6 +264,8 @@ Software Engineer - with focus on
 > making calls to API to fetch/discover data and metadata
 
 	***Not** interested in data producer/modeling, back-end services...*
+
+	---------------
 	
 	- How to discover and organise datasets
 	- How are datasets structured? (before having to download any data)
@@ -332,15 +335,15 @@ SDMX versions:
 					<textarea data-template>
 	## Dataflow
 	
-	A **Dataset** conforms to business rules of a **Dataflow**
+	A **dataset** conforms to business rules of a **dataflow**
 
-	**Dataflow** will contain:
+	A **dataflow** will contain:
 	
 	- Annotations (comments)
 	- Description
 	- Name
 	
-	A **Dataflow** uses specific **Data Structure Definition**
+	A **dataflow** uses a specific **data structure definition**
 
 	<span style="font-weight: 100; font-size: 50%;">Adapted from [UNSD SDMX Session 4 - Intro to SDMX Data Modeling](https://www.unescap.org/sites/default/files/Session_4_SDMX_Data_Modeling_%20Intro_UNSD_WS_National_SDG_10-13Sep2019.pdf)</span>
 					
@@ -350,8 +353,6 @@ SDMX versions:
 				<section data-markdown>
 					<textarea data-template>
 	## Data Structure Def. (DSD)
-
-	*Think columns in a table*
 	
 	- **Measures** - values/observations
 	  - (what we want to show on a map)
@@ -359,6 +360,8 @@ SDMX versions:
 	  - can be used to idenfity observations
 	- **Attributes** - additional characteristics that further describe it
 	  - additional information about observations				
+		
+*Think columns in a table*
 
 	<span style="font-weight: 100; font-size: 50%;">Adapted from [UNSD SDMX Session 4 - Intro to SDMX Data Modeling](https://www.unescap.org/sites/default/files/Session_4_SDMX_Data_Modeling_%20Intro_UNSD_WS_National_SDG_10-13Sep2019.pdf)</span>
 					</textarea>
@@ -381,10 +384,10 @@ SDMX versions:
 	<img src="img/df-example-small.png" width="1000px"></img>	
 
 	<ul>
-		<li style="color: #fd98ee;">Purple = Dimension</li>
-		<li style="color: #ff6c6c;">Red = Time Dimension</li>
-		<li style="color: #8ed5ff;">Blue = Measure / Observation Value</li>
-		<li style="color: #e7cc8b;">Yellow = Attribute</li>
+		<li style="color: #fd98ee;">Purple = dimension</li>
+		<li style="color: #ff6c6c;">Red = time dimension</li>
+		<li style="color: #8ed5ff;">Blue = measure / observation value</li>
+		<li style="color: #e7cc8b;">Yellow = attribute</li>
 		</ul>
 		
 					</textarea>
@@ -494,11 +497,13 @@ Dataflow may also have **content constraints:**
 
 						<img src="img/df-example-small.png" width="1000px"></img>	
 						
-						- `OBS_VALUE` = what we are interested in
-						- **`UNIT_MEASURE`** = units
-						- **`UNIT_MULT`** = unit multiplier
+						- **`TRADE_FLOW`** = `TB` = "Trade Balance"
+						- **`CURRENCY`** = `DOM` = "Domestic Currency"
+						- `_T` = "Total"
+						- **`OBS_VALUE`** measure = what we are interested in
+						- **`UNIT_MEASURE`** attribute = units
+						- **`UNIT_MULT`** attribute = unit multiplier
 							- (`OBS_VALUE * 10^x`)
-						- a few more dimensions...
 						
 						**`UNIT_MEASURE`** and **`UNIT_MULT`** are common Sustainable Development Goals (SDG) attributes <span style="font-weight: 100; font-size: 50%;">(search "sdg dsd" for more info)</span>
 						
@@ -647,8 +652,6 @@ Demo
 				
 				</textarea>
 			</section>
-
-
 
 		</div>
 	</div>
