@@ -16,4 +16,4 @@ It is sponsored by some of the most important international organisations includ
 
 A massive wealth of data is published by these organisations (among others) using SDMX, and is largely untapped by the geospatial web community.
 
-Using TerriaJS, an “open-source framework for web-based geospatial catalogue explorers", I will explore new ways of integrating open statistical data with geospatial data for data discovery, visualisation and analysis — with SDMX, WMS, WFS, WCS, WPS, CKAN, THREDDS, OPeNDAP, Mapbox Vector Tiles and GeoTIFFs!
+Using TerriaJS, an “open-source framework for web-based geospatial catalogue explorers", I will explore new ways of integrating open statistical data with geospatial data for data discovery, visualisation and analysis
