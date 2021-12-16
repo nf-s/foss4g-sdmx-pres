@@ -4,9 +4,9 @@ Presented at [FOSS4G Oceania 2021](https://osgeo-oceania.org/foss4g-sotm-oceania
 
 ### [Slides](https://nf-s.github.io/foss4g-sdmx-pres/)
 
-### Video
+### [Video](https://www.youtube.com/watch?v=yA_VGBHtSn8)
 
-TBA
+[![Watch the video](https://img.youtube.com/vi/yA_VGBHtSn8/hqdefault.jpg)](https://www.youtube.com/watch?v=yA_VGBHtSn8)
 
 ## Description
 
